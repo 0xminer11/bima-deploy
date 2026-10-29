@@ -1,0 +1,43 @@
+{
+  "chains": {
+    "monad_testnet": {
+      "chainId": 10143,
+      "name": "Monad Testnet",
+      "rpcUrl": "https://testnet-rpc.monad.xyz",
+      "explorerUrl": "https://testnet.monadexplorer.com",
+      "nativeCurrency": { "name": "Monad", "symbol": "MON", "decimals": 18 },
+      "factory": "0x0C68a3339A4a8B20F0546a138E647BF7d082A9A0",
+      "privateKeyEnv": "PRIVATE_KEY"
+    }
+  },
+
+  "vaults": [
+    {
+      "id": "sept-2026-sbmbtc",
+      "name": "Sept_2026",
+      "symbol": "sbmBTC",
+      "permissionLevel": "None",
+
+      "terms": {
+        "minDeposit": "0.1",
+        "minRedeem": "0.1",
+        "maxCapacity": "1",
+        "minCapacity": "0.5",
+        "interestInterval": "1d",
+        "duration": "1d",
+        "depositPeriod": "1d",
+        "acceptGracePeriod": "1d",
+        "withdrawalPeriod": "0s"
+      },
+
+      "targets": {
+        "monad_testnet": {
+          "asset": "0x4260121248Db5c3330A55A415A6A5C8aF4936182",
+          "loanToken": "0x466C92d5bf1Adc11D62e08e3CAae6DB2b7D42A85",
+          "investmentManager": "0x3e3e452a8ef9eC9F4808a0a87640bD8F78957531",
+          "borrower": "0x3e3e452a8ef9eC9F4808a0a87640bD8F78957531"
+        }
+      }
+    }
+  ]
+}
